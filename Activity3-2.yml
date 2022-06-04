@@ -1,0 +1,11 @@
+---
+- hosts: 127.0.0.1
+  gather_factrs: true
+  become: true
+  roles:
+       - dhcpd
+       - bind9
+       - vsftpd
+       - samba
+       - httpd
+       - mariadb
